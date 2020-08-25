@@ -19,6 +19,8 @@ class CreateLostPetsTable extends Migration
             $table->unsignedInteger('user_id');
             $table->string('lost_time');
             $table->string('lost_place');
+            $table->string('approval_status');
+            $table->string('status');
             $table->timestamps();
             // $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
         });
