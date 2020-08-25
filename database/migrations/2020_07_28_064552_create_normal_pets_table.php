@@ -19,6 +19,7 @@ class CreateNormalPetsTable extends Migration
             $table->unsignedInteger('user_id');
             $table->string('reason');
             $table->string('approval_status');
+            $table->string('status');
             $table->timestamps();
             
             
